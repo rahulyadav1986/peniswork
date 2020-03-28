@@ -1,0 +1,63 @@
+@media only screen and (max-width:1800px) and (min-width:1600px){
+    .home-landing-page-section{ background-position: 558px top;}
+}
+
+@media only screen and (max-width:1599px) and (min-width:1366px){
+    .home-landing-page-section{ background-position: 432px top;}
+}
+
+@media only screen and (max-width:1365px) and (min-width:1024px){
+    .home-landing-page-section{ background-position: 355px top;}
+    .container{ max-width: 100%;}
+    header .right-section .details li{    margin: 0 20px 0 0;     width: 200px;}
+    .sec-accor .tabs li a{ font-size: 12px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px){
+    .home-landing-page-section{ background-image: none;}
+    header .right-section .details li{ margin: 0 50px 0 0; padding: 0; cursor: pointer;}
+    header .right-section .details li:nth-child(2){ margin-top: 6px;}
+    header .right-section .details li img{filter: invert(100%); -webkit-filter:invert(100%); position: relative; }
+    header .right-section .details li .content{ display: none;}
+    .hero-section{ margin: 60px 0 0 0;}
+    .hero-content-area{ width: 100%; margin: 0 0 60px 0;}
+    .right-form-area{ width: 100%;}
+    .home-landing-page-section{ height: auto;}
+}
+
+@media only screen and (max-width:767px){
+    .home-landing-page-section{ background-image: none;}
+    header .right-section .details li{ margin: 0 50px 0 0; padding: 0; cursor: pointer;}
+    header .right-section .details li:nth-child(2){ margin-top: 6px;}
+    header .right-section .details li img{filter: invert(100%); -webkit-filter:invert(100%); position: relative; }
+    header .right-section .details li .content{ display: none;}
+    .hero-section{ margin: 60px 0 0 0;}
+    .hero-content-area{ width: 100%; margin: 0 0 60px 0;}
+    .right-form-area{ width: 100%;}
+    .home-landing-page-section{ height: auto;}
+}
+
+@media only screen and (max-width:560px){
+    .sec-accor .tabs li{ width: 50%; margin: 0 0 15px 0;}
+    .sec-accor .tabs li a{ width: 100%; font-size: 14px;}
+    .sec-accor .tabs li:nth-child(2) a{     border-radius: 0 20px 20px 0;}
+    .sec-accor .tabs li:nth-child(3) a{     border-radius: 20px 0 0 20px;}
+}
+
+@media only screen and (max-width:432px){
+    .sec-accor .tabs li{ width: 100%; margin: 0 0 15px 0;}
+    .sec-accor .tabs li a{ width: 100%; font-size: 14px; border-radius: 20px !important;}
+    .right-form-area form .portion{ width: 100%; padding: 0; margin: 0 0 15px 0;}
+    .date-section .sec{ width: 100%; padding: 0; margin: 0 0 15px 0;} 
+}
+
+@media only screen and (max-width:432px){
+    header .right-section .details li{ margin: 0 20px 0 0; float: none; display: inline-block;}
+    .hero-content-area h1{ font-size: 60px;}
+    header{ text-align: center;}
+    header .logo{ float: none; display: inline-block;}
+    header .right-section{ width: 100%; text-align: center;}
+    header .right-section .details{ width: 100%; text-align: center;}
+    .hero-content-area{text-align: center;}
+    .right-form-area .custom-button{ font-size: 16px;}
+}
