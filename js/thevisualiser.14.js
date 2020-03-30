@@ -88,7 +88,11 @@ function loadpreset(theid)
 			$('#framecontainer').hide();
 			$('#graphcont').fadeIn('fast');
 			if(scalePerc == 1) $('#itemstab').show(); //only show the objects if the scale is 1
+<<<<<<< HEAD
 			$.post('http://localhost/visualier/ajaxgetpreset.php', 'preset='+ theid, function(data) {
+=======
+			$.post('http://localhost/penis%20work/ajaxgetpreset.php', 'preset='+ theid, function(data) {
+>>>>>>> 1e7c4704037cf6051aa4336f935f917024643b30
 				$('.response_val').html(data);
 				var res = $('.response_val').html();
 				cockTo(righttimer, 20, rightfcnt, res);

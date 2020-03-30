@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* CSS Document */
+.buttonbarcont {
+	height: auto;
+	width: 100%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	overflow: hidden;
+	position: relative;
+}
+
+.barbutton { border: 1px solid #aaa; height: auto; float:left; text-align: center; font-size: 14px; padding: 10px; cursor:pointer; color: #333; margin-top: 2px; margin-bottom: 2px; position: relative; }
+.barbutton img { float: left; margin-right: 5px;}
+
+.emptybutton {
+	float:left;
+	padding: 10px;
+}
+.barbutton select { margin:0px}
+.titlebutbarcont {
+	margin-top: 30px; float:right;
+}
+.thinbarbutton {
+	border: 1px solid #aaa;
+	height: auto;
+	float:left;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 100;
+	cursor:pointer;
+	color: #333;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	background-color: #e7e7ec;
+}
+.thinbarbutton_icon {
+	background: url(../images/assets/back.png), linear-gradient( #fcfafe, #e7e7ec);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-color: #e7e7ec;
+	background-size:contain;
+	color: #49497f;
+	text-shadow: 1px 1px #fff;
+}
+.thinbarbutton:hover {
+	color: #CCC;
+}
+.barbutton:hover {
+	color: #669;
+}	
+.butfirst{
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-right-style: none;
+	background-color: #f1f1f1;
+}
+.butlast{
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	background-color: #f1f1f1;
+	margin-right: 2px;
+}
+.butmiddle {
+	background-color: #f1f1f1;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #aaa;
+	border-bottom-color: #aaa;
+	border-right-style: none;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #CCC;
+}
+.butsingle {border-radius: 5px; background-color: #f1f1f1; margin-right: 2px;}
+
+.barbutton_fixed_150 { width:128px; }
+.barbutton_fixed_130 { width:130px; }
+.barbutton_fixed_200 { width:256px; }
+.barbutton_fixed_100 { width:100px; } 
+.barbutton_fixed_75 { width:75px; } 
+.barbutton_mobile { max-width:300px; width: 94%;}
+.barbutton_icon {
+	background-image: url(../images/bpointblue.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-color: #f8f7fc;
+}
+
+.redbutfade { background-image: -webkit-linear-gradient( #fa3d3e, #a11414); background-image: -moz-linear-gradient( #fa3d3e, #a11414 ); background-image: -ms-linear-gradient( #fa3d3e, #a11414 ); background-image:  -o-linear-gradient( #fa3d3e, #a11414 ); background-image:  linear-gradient( #fa3d3e, #a11414); color: #FFF; text-shadow:none; background-repeat: no-repeat; }
+.redbutfade:hover {
+	color: #FC9;
+}
+.greybutfade {
+	background-image: -webkit-linear-gradient( #f9f9f9, #bbbbbb); 
+	background-image: -moz-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image: -ms-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image:  -o-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image:  linear-gradient( #f9f9f9, #bbbbbb);
+	color: #49497f;
+	text-shadow: 1px 1px #fff;
+	border-color:#ccc;
+	background-repeat: no-repeat;
+}
+.greybutfade:hover {
+	color: #0066CC;
+}
+.dgreybutfade {
+	background-image: -webkit-linear-gradient( #f9f9f9, #bbbbbb); 
+	background-image: -moz-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image: -ms-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image:  -o-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image:  linear-gradient( #f9f9f9, #bbbbbb);
+	color: #49497f;
+	text-shadow: 1px 1px #fff;
+	border-color:#aaa;
+}
+.dgreybutfade:hover {
+	color: #0066CC;
+}
+.bluebutfade {
+	background-image: -webkit-linear-gradient( #97a4c8, #3853a5); 
+	background-image: -moz-linear-gradient( #97a4c8, #3853a5 ); 
+	background-image: -ms-linear-gradient( #97a4c8, #3853a5 ); 
+	background-image:  -o-linear-gradient( #97a4c8, #3853a5 ); 
+	background-image:  linear-gradient( #97a4c8, #3853a5);
+	color: #FFF;
+	text-shadow:none;
+}
+.bluebutfade:hover {
+	color: #CCC;
+}
+.disable {
+	color: #CCC;
+	cursor:default;
+	background-image: none;
+}
+.disable:hover {
+	color: #CCC;
+}
