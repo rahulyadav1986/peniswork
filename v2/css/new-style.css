@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.qt    { color: #666; margin: 3px; padding: 8px; clip: rect(auto auto auto auto); border: 2px solid #bcbcbc; border-top-right-radius:1em; border-bottom-right-radius:1em; border-bottom-left-radius:1em; box-shadow: 2px 2px 6px #cacaca; font-style: italic; background-color: #f1f1f1; }
+
+.shadow { box-shadow: 2px 2px 6px #cacad7; }
+.shadow-dark { box-shadow: 2px 2px 6px #707070; }
+.lightest-background { background-color: #fff; }
+.white-bg {background-color: #fff;}
+.mid-background { background-color: #e7e7ec; }
+.rounded {border-radius: 5px;}
+.i-input {
+	float:left;
+	font-size: 13px;
+	padding: 6px;
+	width: 92%;
+	border: 1px solid #CCC;
+	border-radius: 5px; 
+}
+.i-radio {
+	float:left;
+	margin-right: 10px;
+}
+.i-select { font-size: 13px; padding: 6px; border: 1px solid #CCC; color: #669; }
+.i-select-block { font-size: 13px; padding: 6px; border: 1px solid #CCC; display: block; color: #669;}
+textarea {font-family: Arial, Helvetica, sans-serif;}
+
+.slatefade {
+	background-image: -webkit-linear-gradient( #bdc4d6, #68759c); 
+	background-image: -moz-linear-gradient( #bdc4d6, #68759c ); 
+	background-image: -ms-linear-gradient( #bdc4d6, #68759c ); 
+	background-image:  -o-linear-gradient( #bdc4d6, #68759c ); 
+	background-image:  linear-gradient( #bdc4d6, #68759c);
+}
+.greyfade {
+	background-image: -webkit-linear-gradient( #f9f9f9, #bbbbbb); 
+	background-image: -moz-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image: -ms-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image:  -o-linear-gradient( #f9f9f9, #bbbbbb ); 
+	background-image:  linear-gradient( #f9f9f9, #bbbbbb);
+}
+
+/* header */
+#header { position: fixed; background-color: #667aae; height: 40px; width: 100%; left: 0px; top: 0px; text-align: center; color: #eb2a2e; opacity: 0.9;}
+.title {
+	position: relative;
+	margin-top: 0.5em;
+	margin-right: auto;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	font-size: 1.5em;
+	font-size: 18px;
+}
+/* /header */
+
+#mask { background-color: #000; position: fixed; height: 100%; width: 100%; left: 0px; top: 0px; display:none; }
+.mask { background-color: #000; position: fixed; height: 100%; width: 100%; left: 0px; top: 0px; display:none; }
+
+/************************ menu ***********************/
+#menu-icon {
+	background-image: url(../images/svg/menu.svg);
+	position: absolute;
+	height: 32px;
+	width: 48px;
+	left: 2%;
+	top: 4px;
+	cursor: pointer;
+}
+#swipe-menu { position: absolute; background-color: #4a5a86; background-image: url(../images/assets/back.gif); min-height: 150%; width: 250px; left: -270px; top: 0px; font-size: 14px;  z-index: 1000; }
+#swipe-menu .menulist { display:none; overflow: hidden; }
+#swipe-menu dl {
+	margin: 0px;
+}
+#swipe-menu dt { padding: 10px; font-size: 16px; cursor:pointer; color: #c7cee2; font-weight: normal; border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #667aae;}
+#swipe-menu dt:hover {color:#fff;}
+#swipe-menu dd { padding: 8px; cursor:pointer; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #999; margin: 0px; color:#fff; font-size: 14px; font-weight: 200; }
+#swipe-menu dd:hover {color:#fc9;}
+#swipe-menu a { color:#FFF; text-decoration: none; cursor:pointer;}
+#swipe-menu a:hover {color:#fc9;}
+#swipe-menu .line {border-bottom-width: 1px;}
+#swipe-menu .nolink {color:#888; cursor:default;}
+#swipe-menu .nolink:hover {color:#888;}
+#swipe-menu .arrow-tab { float: right; position: relative; display:block;}
+
+
+#top-links { position: absolute; top: 12px; left: 8%; font-size: 15px; }
+#top-links a{ margin-left: 15px; color: #FFF; }
+/***************** /menu ***********************/
+
+/*  dym-div */
+#dym-div { position: absolute; background-color: #CCC; height: 100%;  width: 600px; top: 0px; font-size: 14px; box-shadow: 4px 4px 8px #000; right: -620px; padding: 10px; text-align: left; background-image: url(../images/assets/backlight.jpg); overflow: auto; display:none;}
+#dym-div-inner { padding: 2%; width: 96%; position: relative; top: 40px; padding-bottom: 100px;}
+#close-icon { background-image: url(../images/assets/closeicon.png); position: absolute; height: 32px; width: 42px; right: 8px; top: 8px; cursor: pointer;}
+#timer { background-color: #FFF; background-image: url(../images/assets/timer32.gif); position: fixed; height: 6%; width: 8%; left: 46%; max-width: 32px; max-height: 32px; top: 46%; background-repeat: no-repeat; background-position: center center; border-radius: 6px; opacity: 0.5; display:none; background-size:contain; padding: 2px; }
+/*  dym-div */
+
+
+
+
+/* graph visualisation stuff */
+#graphcont {
+    width: 560px;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    color: #669;
+    float: left;
+}
+#graph {
+    width: 560px;
+    height: 459px;
+    font-size: 11px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+#graph h3 {
+    font-size: 13px;
+}
+#graph h2 {
+    font-size: 15px;
+}
+#graph h1 {
+    font-size: 16px;
+}
+/* left hand */
+
+#leftcont {
+    width: 100px;
+    height: 459px;
+    position: relative;
+    float: left;
+    border: 0px solid #F00;
+}
+#leftspace {
+    width: 170px;
+    height: 459px;
+    position: relative;
+    left: 0px;
+    float: left;
+    border: 0px solid #F00;
+    background-image: url(../images/ruler/vhandleft.png);
+    background-size: contain;
+}
+#lefttitle {
+    width: 100px;
+    font-size: 14px;
+    position: relative;
+    left: 4%;
+    bottom: 10px;
+    float: left;
+}
+#lefttxt {
+    width: 100px;
+    left: 4%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+}
+#leftimg {
+    display: none;
+    position: absolute;
+    right: 2px;
+    bottom: 0px;
+}
+#leftmorphbut {
+    float: left;
+}
+/* left hand */
+
+/* right hand */
+#rightcont {
+    width: 100px;
+    height: 459px;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    border: 0px solid #F00;
+}
+#rightspace {
+    width: 170px;
+    height: 459px;
+    position: relative;
+    left: 0px;
+    float: left;
+    border: 0px solid #F00;
+    background-image: url(../images/ruler/vhandright.png);
+    background-size: contain;
+}
+#righttitle {
+    width: 100px;
+    font-size: 14px;
+    position: relative;
+    right: 4%;
+    bottom: 10px;
+    float: right;
+    text-align: right;
+}
+#righttxt {
+    width: 100px;
+    font-size: 12px;
+    position: relative;
+    right: 4%;
+    text-align: right;
+    float: right;
+}
+#rightimg {
+    display: none;
+    position: absolute;
+    left: 2px;
+    bottom: 0px;
+}
+#rightmorphbut {
+    float: right;
+    margin-right: 0px;
+}
+#righttimer {
+    width: 32px;
+    left: 34px;
+    top: 32px;
+    position: absolute;
+}
+/* right hand */
+
+.greentxt {
+    color: #393;
+} /* flaccid title */
+/* canvas css */
+.cockeye {
+    width: 64px;
+    height: 64px;
+}
+.imgcanvas {
+    display: none;
+}
+.canvas {
+    position: absolute;
+    height: 459px;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+    background-image: url(../images/elements/shade.png);
+    background-position: bottom;
+    background-size: contain;
+}
+.canvasmatrix {
+    background-image: url(../images/parts/pubicbone.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.canvasmatrixXXL {
+    background-image: url(../images/parts/pubicbone-noval.png);
+    background-size: contain;
+}
+#left {
+    position: absolute;
+    left: 0px;
+    bottom: 0px
+} /* canvas  */
+#right {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+} /* canvas  */
+/* canvas css */
+
+
+.icon {
+	position: relative;
+	height: 30px;
+	width: 40px;
+	float:left;
+}
+/* visualiser page stuff */
+#mainContent { padding: 0px 2% 0px 2%; overflow: hidden; }
+#title { padding: 0px 2% 0px 2%; }
+#selectdiv select{ max-width: 270px; width:96%; }
+
+.inner p{font-size: 15px;}
+.goto { cursor:pointer; text-align: right; overflow: hidden; height: auto;  }
+.goto img { float:left; margin: 2px; display: block; }
+#measurecont { font-size: 11px; position: fixed; height: auto; width: 840px; z-index: 2; left: -850px; top: 135px; background-image: url(../images/assets/backlight.jpg); }
+#framecontainer {position: absolute;
+	height: 680px;
+	width: 760px;
+	left: 0px;
+	top: 50px;
+	background-color: #FFF;
+	display:none;}
+#lineupframe {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	left: 0px;
+	top: 0px;
+}	
+/* visualiser page stuff */
+
+#controls { position: relative; float:left; margin-right: 20px; width: 200px; }
+#adcont { position: relative; width: 240px; float: right; height: auto; overflow: hidden; margin-bottom: 20px;}
+#adcont img {float: right; margin-left: 10px;}
+
+#descriptiondiv { font-size: 12px; color: #669; position: relative; text-align: left; width: 100%; }
+#footer { background-color: #3853a5; }
+
+@media screen and (min-width: 150px) and (max-width: 600px) {	
+	#controls { display:block; }
+	#adcont { display:none; }
+	#customcock { display:none; }
+	#visualisertab { display:none; }
+	#itemstab { display:none; }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	#controls { display:block; }
+	#adcont { display:none; }
+}
+@media screen and (min-width: 150px) and (max-width: 1024px) {
+	
+}
+
+@media screen and (min-width: 150px) and (max-width: 600px) {	
+	#title { font-size: 11px; }
+	#top-links { display:none; }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	#top-links { display:none; }
+}

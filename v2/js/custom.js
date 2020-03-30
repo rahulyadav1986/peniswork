@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     //When page loads...
         $(".tab_content").hide(); //Hide all content
@@ -84,16 +85,15 @@ function chk()
 }
 
 
-
 var leftcock, rightcock;
 var imageObj_w = new Image();
 var imageObj_s = new Image();
 var imageObj_b = new Image();
-imageObj_w.src = "../images/parts/w.png";
-imageObj_s.src = "../images/parts/s.png";
-imageObj_b.src = "../images/parts/b.png";
+imageObj_w.src = "images/parts/w.png";
+imageObj_s.src = "images/parts/s.png";
+imageObj_b.src = "images/parts/b.png";
 var tapeImageObj = new Image();
-tapeImageObj.src = "../images/ruler/taperule.png";
+tapeImageObj.src = "images/ruler/taperule.png";
 var lefttimer, righttimer, leftframes, rightframes, leftfcnt, rightfcnt;
 
 leftframes = 50;
@@ -130,11 +130,11 @@ $(document).ready(function(e) {
     $('#tapes').click(displaytapes);
     $('#metrictape').click(displaytapes);
     
-    $('#uk').click(function() { hidehands('../images/items/ukroll.jpg');} );
-    $('#us').click(function() { hidehands('../images/items/usroll.jpg');} );
-    $('#mouse').click(function() { hidehands('../images/items/mouse.jpg');} );
-    $('#iphone').click(function() { hidehands('../images/items/phone.png');} );
-    $('#soda').click(function() { hidehands('../images/items/coke.png');} );
+    $('#uk').click(function() { hidehands('images/items/ukroll.jpg');} );
+    $('#us').click(function() { hidehands('images/items/usroll.jpg');} );
+    $('#mouse').click(function() { hidehands('images/items/mouse.jpg');} );
+    $('#iphone').click(function() { hidehands('images/items/phone.png');} );
+    $('#soda').click(function() { hidehands('images/items/coke.png');} );
     $('#hand').click(function() { showhands(); } );
 });
 function hidehands(image)
@@ -149,8 +149,8 @@ loader.closeDiv('fast');
 }
 function showhands()
 {
-$('#leftspace').css('background-image', 'url(../images/ruler/vhandleft.png)');
-$('#rightspace').css('background-image', 'url(../images/ruler/vhandright.png)');
+$('#leftspace').css('background-image', 'url(images/ruler/vhandleft.png)');
+$('#rightspace').css('background-image', 'url(images/ruler/vhandright.png)');
 $('#leftimg').fadeOut('fast');
 $('#rightimg').fadeOut('fast');
 loader.closeDiv('fast'); 
@@ -234,6 +234,7 @@ getSkin();
 //**************/
 }
 var menuout = false;
+
 
 
 
