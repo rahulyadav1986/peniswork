@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Visualiser</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/buttons.14.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="getDevice();">
+    <div class="home-landing-page-section">
+        <div class="container">
+            <header>
+                <div class="logo"><a href=""><img src="images/logo-2.png" alt=""></a></div>
+                <div class="right-section">
+                    <ul class="details">
+                        <li>
+                            <img src="images/hi1.png" alt="">
+                            <div class="content">ADDRESS :<br>
+                            <span>Lorem Ipsum is that it has a more text</span></div>
+                            
+                        </li>
+                        <li>
+                            <img src="images/hi2.png" alt="">
+                            <div class="content">Mail Us :<br>
+                            <span>info-demo@demomail.com.au</span></div> 
+                        </li>
+                        <li>
+                            <img src="images/hi3.png" alt="">
+                            <div class="content">Call Us :<br>
+                            <span>1300 856 603</span> </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="clear"></div>
+            <div class="hero-section">
+                <div class="visualizer-back">
+                    
+                  <div id="mainContent" >
+                    <div class="buttonbarcont">
+                     
+                        
+                        <button id="exampletab" class="compaison">Select a Comparison</button>
+                        <!--<button class="leftmorphbut" onclick="cockMorph(leftcock, lefttimer, leftframes, leftfcnt)" id="leftmorphbut">Morph to Flaccid</button>
+                        <button class="leftmorphbut" onclick="cockMorph(rightcock, righttimer, rightframes, rightfcnt)" id="rightmorphbut">Morph to Flaccid</button>
+                        <button class="compaison" onclick="cockMorph(leftcock, lefttimer, leftframes, leftfcnt); cockMorph(rightcock, righttimer, rightframes, rightfcnt)"> Morph to Compare</button>
+
+                        <input type="checkbox" id="tapes" >
+                        <label for="tapes">Tailors Tape</label>
+                        (
+                        <input type="checkbox" id="metrictape" >
+                        <label for="metrictape">Metric</label>
+                        )-->
+                        
+                    </div>
+                    
+                    
+                    <div id='graphcont' >
+                      <div id="graph" class="">
+                        <div id='leftspace'><img id='leftimg' src="images/assets/cleartint.png"/>
+                          <div id='lefttxt'>
+                            <h3 id="leftname" style="color:#000"></h3>
+                            <h1 id="leftstate" class="statetxt">Erect</h1>
+                            <span id='leftdetails'></span>
+                            <p id='leftVol'></p>
+                          </div>
+                          <div id='lefttitle'></div>
+                        </div>
+                        <div id="leftcont">
+                          <canvas height="459" width="100" id="left" class="canvas"></canvas>
+                          <div class="canvasmatrix canvas" id="leftmatrix"></div>
+                        </div>
+                        <div id="rightcont"><!--<img src="images/assets/timer32.gif" id="righttimer"/>-->
+                          <canvas height="459" width="100" id="right" class="canvas"></canvas>
+                          <div class="canvasmatrix canvas" id="rightmatrix"></div>
+                        </div>
+                        <div id='rightspace'><img id='rightimg' src="images/assets/cleartint.png"/>
+                          <div id='righttxt'>
+                            <h3 id="rightname"></h3>
+                            <h1 id="rightstate" class="statetxt">Erect</h1>
+                            <span id='rightdetails'></span>
+                            <p id='rightVol'></p>
+                          </div>
+                          <div id='righttitle'></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end graphcont --> 
+                    
+                  </div>
+                  <div id="dym-div">
+                    <div id="close-icon" title="Close"></div>
+                    <div id="dym-div-inner" class="listbox">
+                      <div id="selectdiv" class="listbox" style="display:none;">
+                        <h2>Select a Comparison</h2>
+                        <fieldset>
+                          <input type="radio" name="radiogroup"  value="ON" onClick="TurnOn('0')" id="r0" >
+                          <label for="r0">Smaller Sizes Stats</label>
+                          <select class="i-select" disabled="disabled" size="1" name="select0" id="select0" onChange="loadpreset(this.value)">
+                            <option value="0" >Select...</option>
+                            <option value='45'>The Visualisers - Mr Modest</option>
+                            <option value='5'>The Visualisers - Small-Average Gold Member</option>
+                            <option value='1'>LifeStyles Condoms - small average</option>
+                          </select>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                          <input type="radio" name="radiogroup"  value="ON" onClick="TurnOn('3')" checked id="r3">
+                          <label for="r3">Average Stats</label>
+                          <select class="i-select"  size="1" name="select3" id="select3" onChange="loadpreset(this.value)">
+                            <option value="0" >Select...</option>
+                            <option value='56'>UK research average</option>
+                            <option value='10'>Average Asian</option>
+                            <option value='9'>Alfred Kinsey's average penis size</option>
+                            <option value='3'>LifeStyles Condoms survey average</option>
+                            <option value='47'>The Visualisers - Mr Medium</option>
+                            <option value='8'>Durex condoms research average</option>
+                            <option value='11'>Average Caucasian</option>
+                            <option value='4'>The Visualisers Mr Average (Validated)</option>
+                            <option value='53'>The Visualisers Mr Average (Unvalidated)</option>
+                            <option value='12'>Average Black Guy</option>
+                          </select>
+                        </fieldset>
+                        <fieldset>
+                          <input type="radio" name="radiogroup" value="ON" onClick="TurnOn('1')" id="r1">
+                          <label for="r1">Larger Stats</label>
+                          <select class="i-select" disabled="disabled" size="1" name="select1" id="select1" onChange="loadpreset(this.value)">
+                            <option value="0" >Select...</option>
+                            <option value='2'>LifeStyles Condoms - large average</option>
+                            <option value='6'>The Visualisers - Large Member</option>
+                            <option value='46'>The Visualisers - Mr Big</option>
+                            <option value='55'>The Visualisers - Mr Huge (validated)</option>
+                            <option value='54'>The Visualisers - Mr Huge (unvalidated)</option>
+                          </select>
+                        </fieldset>
+                        <fieldset>
+                          <input type="radio" name="radiogroup"  value="ON" onClick="TurnOn('4')" id="r4">
+                          <label for="r4">Female Desires</label>
+                          <select class="i-select" disabled="disabled" size="1" name="select4" id="select4" onChange="loadpreset(this.value)">
+                            <option value="0" >Select...</option>
+                            <option value='7'>The Visualisers - Female Members Ideal Size</option>
+                            <option value='19'>Womens Perfect Penis</option>
+                            <option value='24'>VixenVicky's ideal size</option>
+                          </select>
+                        </fieldset>
+                        <fieldset>
+                          <input type="radio" name="radiogroup"  value="ON" onClick="TurnOn('5')" id="r5">
+                          <label for="r5">Porn Stars</label>
+                          <select class="i-select" disabled="disabled" size="1" name="select5" id="select5" onChange="loadpreset(this.value)">
+                            <option value="0" >Select...</option>
+                            <option value='28'>Porn Star - Preston Parker</option>
+                            <option value='30'>Porn Star - Ben English</option>
+                            <option value='17'>Porn Star - Peter North</option>
+                            <option value='29'>Porn Star - Billy Glide</option>
+                            <option value='48'>Porn Star  -  Nacho Vidal</option>
+                            <option value='16'>Porn Star -  John Holmes</option>
+                            <option value='33'>Porn Star - Julian Rios</option>
+                            <option value='49'>Porn Star - Rocco Sifferdi</option>
+                            <option value='31'>Porn Star - Ramon</option>
+                            <option value='14'>Porn Star  -  Ron Jeremy</option>
+                            <option value='15'>Porn Star - Lexington Steel</option>
+                            <option value='32'>Porn Star - Shorty Mac</option>
+                            <option value='18'>Porn Star - Shane Diesel</option>
+                            <option value='13'>Porn Star - Mandingo</option>
+                          </select>
+                        </fieldset>
+                        <fieldset>
+                          <input type="radio" name="radiogroup" value="ON" onClick="TurnOn('2')" id="r2">
+                          <label for="r2">Site Members (Ordered by size)</label>
+                          <select class="i-select" disabled="disabled" size="1" name="select2" id="select2" onChange="loadpreset(this.value)">
+                            <option value="0" >Select...</option>
+                            <option value='20'>Validated Gold Member - der_bayer</option>
+                            <option value='21'>Validated Gold Member - Casperr</option>
+                            <option value='23'>Validated Gold Member - Jordan1911</option>
+                            <option value='26'>Validated Gold Member - kleinigkeit</option>
+                            <option value='38'>Validated Gold Member - jcqaz</option>
+                            <option value='22'>The Site Creator - The Mod</option>
+                            <option value='27'>Validated Gold Member - goathere</option>
+                            <option value='39'>Validated Gold Member - Play50</option>
+                            <option value='40'>Validated Gold Member - NickJones165</option>
+                            <option value='37'>Validated Gold Member - john1mar1</option>
+                            <option value='52'>Validated Gold Member - FrenchSeven</option>
+                            <option value='50'>Validated Gold Member - kingkong77</option>
+                            <option value='43'>Validated Gold Member - Dave3</option>
+                            <option value='42'>Validated Gold Member - m78yo12e96</option>
+                            <option value='44'>Validated Gold Member - wallian</option>
+                            <option value='51'>Validated Gold Member - Mark221</option>
+                            <option value='34'>Validated Gold Member - justanaussie</option>
+                            <option value='35'>Validated Gold Member - Stallion</option>
+                            <option value='41'>Personality and Site Gold Member - Jonah Falcon</option>
+                          </select>
+                        </fieldset>
+                      </div>
+                      <div id="selectitem" class="listbox" style="display:none;">
+                        <h2>Select an object</h2>
+                        <div class="inner">
+                          <p class='line goto' id='hand'><img src="images/items/thand.jpg">&nbsp;Vicky's hand/Rules</p>
+                          <p class='goto line' id='iphone'><img src="images/items/tphone.jpg">&nbsp;iPhone 4</p>
+                          <p class='goto line' id='uk'><img src="images/items/tukroll.jpg">&nbsp;UK Toilet Roll</p>
+                          <p class='goto line' id='us'><img src="images/items/tukroll.jpg">&nbsp;US Toilet Roll</p>
+                          <p class='goto line' id='mouse'><img src="images/items/tmouse.jpg">&nbsp;PC Mouse</p>
+                          <p class='goto line' id='soda'><img src="images/items/tcoke.jpg">&nbsp;Soda Can</p>
+                        </div>
+                      </div>
+                      <div id="selectvis" class='listbox' style="display:none;">
+                        <h2>Select Visualisation</h2>
+                        <div class="inner">
+                          <p class='goto line' onclick="changevis('graph')"><img src="images/elements/measureicon.png" title='Size Morph view'>&nbsp;State Morph (Default View)</p>
+                          <p class='goto line' onclick="changevis('vis')"><img src="images/elements/profilericon.png" title='Profiler Visualisation'>&nbsp;The profiler</p>
+                          <p class='goto line' onclick="changevis('preset')"><img src="images/elements/inspectoricon.png" title='Inspector Visualisation'>&nbsp;The Inspector</p>
+                          <p class='goto line' ><img src="images/elements/missionaryicon.png" title='Missionary Visualisation'>&nbsp;The Missionary (Full members only)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                  <canvas width="95" height="802" id="imgCanvas_w" class="imgcanvas"></canvas>
+                  <canvas width="95" height="802" id="imgCanvas_s" class="imgcanvas"></canvas>
+                  <canvas width="95" height="802" id="imgCanvas_b" class="imgcanvas"></canvas>
+                </div>
+            </div>  
+        </div>
+    </div> 
+    <script src="js/jquery.js"></script>
+    <script src="js/penisClass.14.js"></script> 
+    <script src="js/comparePenisClass.14.js"></script> 
+    <script src="js/sizerPenisClass.14.js"></script> 
+    <script src="js/thevisualiser.14.js"></script> 
+    <script src="js/pageloader.14.js"></script>
+    <script src="js/custom.js"></script>    
+</body>
+</html>

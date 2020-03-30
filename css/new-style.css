@@ -91,7 +91,7 @@ textarea {font-family: Arial, Helvetica, sans-serif;}
 
 /*  dym-div */
 #dym-div { position: absolute; background-color: #CCC; height: 100%;  width: 600px; top: 0px; font-size: 14px; box-shadow: 4px 4px 8px #000; right: -620px; padding: 10px; text-align: left; background-image: url(../images/assets/backlight.jpg); overflow: auto; display:none;}
-#dym-div-inner { padding: 2%; width: 96%; position: relative; top: 40px; padding-bottom: 100px;}
+#dym-div-inner { padding: 2%; width: 100%; position: relative; top: 0; padding-bottom: 100px;}
 #close-icon { background-image: url(../images/assets/closeicon.png); position: absolute; height: 32px; width: 42px; right: 8px; top: 8px; cursor: pointer;}
 #timer { background-color: #FFF; background-image: url(../images/assets/timer32.gif); position: fixed; height: 6%; width: 8%; left: 46%; max-width: 32px; max-height: 32px; top: 46%; background-repeat: no-repeat; background-position: center center; border-radius: 6px; opacity: 0.5; display:none; background-size:contain; padding: 2px; }
 /*  dym-div */
