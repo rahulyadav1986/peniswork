@@ -24,7 +24,7 @@
     .right-form-area{ width: 100%;}
     .home-landing-page-section{ height: auto;}
 
-    .buttonbarcont { width: 100% !important;}
+    .buttonbarcont { width: 100% !important; height: auto !important; }
     #graphcont{ width: 100% !important; margin: 30px 0 0 0;}
 }
 
@@ -39,7 +39,7 @@
     .right-form-area{ width: 100%;}
     .home-landing-page-section{ height: auto;}
 
-    .buttonbarcont { width: 100% !important;}
+    .buttonbarcont { width: 100% !important; height: auto !important; }
     #graphcont{ width: 100% !important; margin: 30px 0 0 0;}
 }
 

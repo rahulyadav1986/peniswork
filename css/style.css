@@ -134,14 +134,11 @@ header .right-section .details li img{ position: absolute; top: 0; left: 0; bott
 #enter-value{ display: none;}
 .open#enter-value{ display: inline-block;}
 
-<<<<<<< HEAD
-.visualizer-back{ width: 100%; height: auto; margin: 20px 0 0 0; padding: 30px; float: left; background-color: #fff; box-shadow: rgba(0,0,0,.2) 1px 0 30px; border-radius: 20px; min-height: 731px;;}
-=======
 .visualizer-back{ width: 100%; height: auto; margin: 20px 0 0 0; padding: 30px; float: left; background-color: #fff; box-shadow: rgba(0,0,0,.2) 1px 0 30px; border-radius: 20px; position: relative; overflow: hidden;  }
 .visualizer-back h2{ margin: 0 0 15px 0; padding: 0; color: #333; font-size: 20px;} 
 
 #mainContent{ width: 100%; float: left; overflow: visible !important; padding: 0 !important;}
-.buttonbarcont{ width: 25% !important; height: 100% !important; background-color: #f7f7f7 !important; border: #ddd 1px solid; padding: 15px; float: left; background-color: transparent; border-radius: 10px; margin: 0 !important;}
+.buttonbarcont{ width: 25% !important; height: 470px !important; background-color: #f7f7f7 !important; border: #ddd 1px solid; padding: 15px; float: left; background-color: transparent; border-radius: 10px; margin: 0 !important;}
 .barbutton{ width: 100% !important; float: left;}
 #graphcont{ width: 75%; float: left;}
 
@@ -158,4 +155,3 @@ header .right-section .details li img{ position: absolute; top: 0; left: 0; bott
     .buttonbarcont button.compaison:before{ background-image: url(../images/comparison.png); background-repeat: no-repeat; width: 25px; height:25px; padding: 0 8px 0 0; position: absolute; top: 0; left: 14px; bottom: 0; margin: auto;  border-right: #3a21d7 1px solid; content: "";}
 
     .buttonbarcont button.leftmorphbut:before{ background-image: url(../images/dna.png); background-repeat: no-repeat; width: 25px; height:25px; padding: 0 8px 0 0; position: absolute; top: 0; left: 14px; bottom: 0; margin: auto;  border-right: #3a21d7 1px solid; content: "";}
->>>>>>> 1e7c4704037cf6051aa4336f935f917024643b30
