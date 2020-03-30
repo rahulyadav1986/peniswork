@@ -23,6 +23,9 @@
     .hero-content-area{ width: 100%; margin: 0 0 60px 0;}
     .right-form-area{ width: 100%;}
     .home-landing-page-section{ height: auto;}
+
+    .buttonbarcont { width: 100% !important;}
+    #graphcont{ width: 100% !important; margin: 30px 0 0 0;}
 }
 
 @media only screen and (max-width:767px){
@@ -35,6 +38,9 @@
     .hero-content-area{ width: 100%; margin: 0 0 60px 0;}
     .right-form-area{ width: 100%;}
     .home-landing-page-section{ height: auto;}
+
+    .buttonbarcont { width: 100% !important;}
+    #graphcont{ width: 100% !important; margin: 30px 0 0 0;}
 }
 
 @media only screen and (max-width:560px){
